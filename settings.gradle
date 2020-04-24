@@ -1,0 +1,2 @@
+rootProject.name='Autism App'
+include ':app'

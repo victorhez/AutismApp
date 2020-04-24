@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Autism App</string>
+    <string name="page_0_title">Autism Intro</string>
+    <string name="page_0_content">We make registering, hosting, and managing domains for yourself or others easy and affordable, because the internet needs people.</string>
+    <string name="page_0_summary">Summary..........</string>
+    <string name="page_1_title">Title</string>
+    <string name="page_1_content"><![CDATA[Join Our Newsletter & Marketing Communication]]></string>
+    <string name="page_1_summary">Summary..........</string>
+    <string name="page_2_title">Title</string>
+    <string name="page_2_summary">Page 2 Content Here</string>
+    <string name="page_2_content">Page 2 Content Here</string>
+    <string name="page_3_title">Page 3 Title Here</string>
+    <string name="page_3_content">Page 3 Content Here</string>
+    <string name="page_3_summary">Page 3 Summary Here</string>
+    <string name="page_4_title">Page 4 Title Here</string>
+    <string name="page_4_content">Page 4 Content Here</string>
+    <string name="page_4_summary">Page 4 Summary Here</string>
+</resources>
