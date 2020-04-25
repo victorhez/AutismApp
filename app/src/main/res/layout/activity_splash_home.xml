@@ -7,24 +7,23 @@
     tools:context=".SplashHome"
     android:background="#000">
 
-
-
-        <ImageView
-            android:id="@+id/logoId"
-            android:layout_centerHorizontal="true"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/logo" />
-
-
-
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AUTISM APP"
+        android:layout_marginTop="39dp"
+        android:textColor="#fece2f"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textSize="27dp"/>
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/logo"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:layout_below="@id/logoId"
+        android:layout_below="@id/text"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
@@ -32,16 +31,6 @@
         app:lottie_loop="true"
         app:lottie_autoPlay="true"
         />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AUTISM APP"
-        android:layout_marginTop="529dp"
-        android:textColor="#fece2f"
-        android:gravity="center"
-        android:id="@+id/text"
-        android:fontFamily="serif-monospace"
-        android:textStyle="bold"
-        android:textSize="27dp"/>
+
 
 </RelativeLayout>

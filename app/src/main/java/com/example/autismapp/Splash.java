@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.Toast;
 
 import com.hololo.tutorial.library.PermissionStep;
@@ -57,18 +58,26 @@ public class Splash extends TutorialActivity {
                         .setBackgroundColor(Color.parseColor("#4cd137"))//#8BCEAB
                         .setDrawable(R.drawable.logo)
                         .setSummary(getString(R.string.page_4_summary))
-                        .build());
+                        .build()
+                );
+        finishTutorial();
 
     }
     @Override
     public void finishTutorial() {
-        Toast.makeText(this, "Tutorial finished", Toast.LENGTH_SHORT).show();
-        Intent intent=new Intent(Splash.this,LoginMain.class);
-        startActivity(intent);
-        //finish();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(Splash.this, "Tutorial finished", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(Splash.this, LoginMain.class);
+                startActivity(intent);
+                finish();
+            }
+        },10000);
+
     }
     @Override
     public void currentFragmentPosition(int position) {
-
+        Toast.makeText(this, "Position: "+position, Toast.LENGTH_SHORT).show();
     }
 }

@@ -20,7 +20,10 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">12sp</item>
+        <item name="android:backgroundTint">@color/primaryTextColor</item>
+    </style>
     <style name="loginParent" parent="parent">
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/loginBkColor</item>
@@ -51,10 +54,7 @@
         <item name="android:textColor">@color/primaryTextColor</item>
     </style>
 
-    <style name="modifiedEditText" parent="parent">
-        <item name="android:textSize">12sp</item>
-        <item name="android:backgroundTint">@color/primaryTextColor</item>
-    </style>
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
